@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Card Hover Effect</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="navbar">
+        <h1>sniggers</h1>
+    </div>
+    <div  data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt data-tilt-scale="1.1" class="card blue">
+        <div class="product">
+            <span class="number">01</span>
+            <span class="sneakers">SNEAKERS</span>
+            <span class="price">$39.9</span>
+            <img src="blue.png">
+        </div>
+        <div class="title">
+            <h2>Nike Blue</h2>
+        </div>
+    </div>
+
+    <div data-tilt data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt data-tilt-scale="1.1" class="card purple">
+        <div class="product">
+            <span class="number">02</span>
+            <span class="sneakers">SNEAKERS</span>
+            <span class="price">$49.9</span>
+            <img src="yellow.png">
+        </div>
+        <div class="title">
+            <h2>Nike Yellow</h2>
+        </div>
+    </div>
+    <div data-tilt data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt data-tilt-scale="1.1" class="card green">
+        <div class="product">
+            <span class="number">03</span>
+            <span class="sneakers">SNEAKERS</span>
+            <span class="price">$54.9</span>
+            <img src="nike-blue.png" draggable="false">
+        </div>
+        <div class="title">
+            <h2>Nike Green</h2>
+        </div>
+    </div>
+    <div data-tilt data-tilt data-tilt-glare data-tilt-max-glare="0.2" data-tilt data-tilt-scale="1.1" class="card yellow">
+        <div class="product">
+            <span class="number">04</span>
+            <span class="sneakers">SNEAKERS</span>
+            <span class="price">$59.9</span>
+            <img src="nike-purple.png">
+        </div>
+        <div class="title">
+            <h2>Nike Purple</h2>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 25,
+            speed: 200,
+            glare: true,
+            'max-glare': 0.5,
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
+</body>
+</html>
